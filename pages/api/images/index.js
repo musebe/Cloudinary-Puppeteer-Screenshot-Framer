@@ -80,7 +80,7 @@ const handlePostRequest = async (options) => {
   const urlObject = new URL(url);
 
   // Define a path where the screenshot will be saved
-  const path = `public/screenshots/${urlObject.hostname}.png`;
+  const path = `public/images/${urlObject.hostname}.png`;
 
   // Navigate to the url
   await page.goto(url);

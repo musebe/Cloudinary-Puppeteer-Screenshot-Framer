@@ -195,7 +195,7 @@ const handlePostRequest = async (options) => {
   const urlObject = new URL(url);
 
   // Define a path where the screenshot will be saved
-  const path = `public/screenshots/${urlObject.hostname}.png`;
+  const path = `public/images/${urlObject.hostname}.png`;
 
   // Navigate to the url
   await page.goto(url);
@@ -741,4 +741,3 @@ npm run dev
 
 And that's it for this tutorial. This is just a simple demonstration. You can find more complex use cases and implement those. 
 
-You can find the full code on my [Github](https://github.com/newtonmunene99/website-screenshots-using-puppeteer)
